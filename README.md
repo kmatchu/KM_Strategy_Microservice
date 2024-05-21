@@ -2,7 +2,7 @@
 Created by Kevin Mathew on 5/20/24  
 Receives a get request with "High", "Medium", or "Low" and responds with an appropriate investment strategy.  
   
-This program currently runs on a local server. Download the code, then open the file in terminal and type 'npm init', 'npm install', and then 'npm start' to start the local server at http://localhost:5000  
+This program currently runs on a local server. Download the code, then open the file in terminal and type 'npm init', 'npm install', and then 'npm start' to start the local server at http://localhost:5000. Update the Cors requirement to `origin: ${URL}` where URL is the url of the program making the get request. For example, a local React program usually makes the request from http://localhost:8000.
   
 HOW TO REQUEST DATA:  
 Your program should make a GET request to `http://localhost:5000/strategy?risk_tolerance=${risk_variable}`, where 'risk_variable' is equal to "High", "Medium", or "Low". Anything else will cause an error.  
